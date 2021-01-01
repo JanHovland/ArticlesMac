@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		DBD9FC63259F8A240060AEB9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBD9FC62259F8A240060AEB9 /* Preview Assets.xcassets */; };
 		DBD9FC65259F8A240060AEB9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD9FC64259F8A240060AEB9 /* Persistence.swift */; };
 		DBD9FC68259F8A240060AEB9 /* ArticlesMac.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DBD9FC66259F8A240060AEB9 /* ArticlesMac.xcdatamodeld */; };
+		DBD9FC74259F8C880060AEB9 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBD9FC73259F8C880060AEB9 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		DBD9FC67259F8A240060AEB9 /* ArticlesMac.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ArticlesMac.xcdatamodel; sourceTree = "<group>"; };
 		DBD9FC69259F8A240060AEB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBD9FC6A259F8A240060AEB9 /* ArticlesMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ArticlesMac.entitlements; sourceTree = "<group>"; };
+		DBD9FC73259F8C880060AEB9 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBD9FC74259F8C880060AEB9 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +46,7 @@
 			children = (
 				DBD9FC5A259F8A230060AEB9 /* ArticlesMac */,
 				DBD9FC59259F8A230060AEB9 /* Products */,
+				DBD9FC72259F8C880060AEB9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +79,14 @@
 				DBD9FC62259F8A240060AEB9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DBD9FC72259F8C880060AEB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBD9FC73259F8C880060AEB9 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,7 +124,7 @@
 				};
 			};
 			buildConfigurationList = DBD9FC53259F8A230060AEB9 /* Build configuration list for PBXProject "ArticlesMac" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
