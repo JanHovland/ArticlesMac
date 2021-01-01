@@ -13,16 +13,12 @@ struct ArticlesMac: View {
     var body: some View { 
         NavigationView {
             VStack (alignment: .leading, spacing: 10) {
-                
                 NavigationLink(destination: newView) {
-                    Text("New Artile")
+                    Text("New Article")
                 }
-                
                 NavigationLink(destination: showView) {
                     Text("Show all Articles")
                 }
-                
-                
             }
             .padding()
         }
@@ -33,13 +29,15 @@ struct ArticlesMac: View {
         VStack (alignment: .leading, spacing: 5) {
             Text("New Articles")
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)    }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+    }
     
     var showView: some View {
         VStack (alignment: .leading, spacing: 5) {
             Text("Show Articles")
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)    }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+    }
     
 }
 
