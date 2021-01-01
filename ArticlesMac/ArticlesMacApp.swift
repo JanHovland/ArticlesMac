@@ -13,7 +13,7 @@ struct ArticlesMacApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ArticlesMac()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
