@@ -14,6 +14,8 @@
 		DBD9FC65259F8A240060AEB9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD9FC64259F8A240060AEB9 /* Persistence.swift */; };
 		DBD9FC68259F8A240060AEB9 /* ArticlesMac.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DBD9FC66259F8A240060AEB9 /* ArticlesMac.xcdatamodeld */; };
 		DBD9FC74259F8C880060AEB9 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBD9FC73259F8C880060AEB9 /* CloudKit.framework */; };
+		DBD9FC7A259FB4CA0060AEB9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBD9FC78259FB4CA0060AEB9 /* InfoPlist.strings */; };
+		DBD9FC7D259FB4CA0060AEB9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBD9FC7B259FB4CA0060AEB9 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		DBD9FC69259F8A240060AEB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBD9FC6A259F8A240060AEB9 /* ArticlesMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ArticlesMac.entitlements; sourceTree = "<group>"; };
 		DBD9FC73259F8C880060AEB9 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		DBD9FC79259FB4CA0060AEB9 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DBD9FC7C259FB4CA0060AEB9 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				DBD9FC5F259F8A240060AEB9 /* Assets.xcassets */,
 				DBD9FC64259F8A240060AEB9 /* Persistence.swift */,
 				DBD9FC69259F8A240060AEB9 /* Info.plist */,
+				DBD9FC7B259FB4CA0060AEB9 /* Localizable.strings */,
+				DBD9FC78259FB4CA0060AEB9 /* InfoPlist.strings */,
 				DBD9FC6A259F8A240060AEB9 /* ArticlesMac.entitlements */,
 				DBD9FC66259F8A240060AEB9 /* ArticlesMac.xcdatamodeld */,
 				DBD9FC61259F8A240060AEB9 /* Preview Content */,
@@ -130,6 +136,7 @@
 			knownRegions = (
 				en,
 				Base,
+				nb,
 			);
 			mainGroup = DBD9FC4F259F8A230060AEB9;
 			productRefGroup = DBD9FC59259F8A230060AEB9 /* Products */;
@@ -147,6 +154,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBD9FC63259F8A240060AEB9 /* Preview Assets.xcassets in Resources */,
+				DBD9FC7D259FB4CA0060AEB9 /* Localizable.strings in Resources */,
+				DBD9FC7A259FB4CA0060AEB9 /* InfoPlist.strings in Resources */,
 				DBD9FC60259F8A240060AEB9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,6 +175,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DBD9FC78259FB4CA0060AEB9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBD9FC79259FB4CA0060AEB9 /* nb */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DBD9FC7B259FB4CA0060AEB9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBD9FC7C259FB4CA0060AEB9 /* nb */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DBD9FC6B259F8A240060AEB9 /* Debug */ = {

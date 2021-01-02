@@ -14,10 +14,10 @@ struct ArticlesMac: View {
         NavigationView {
             VStack (alignment: .leading, spacing: 10) {
                 NavigationLink(destination: newView) {
-                    Text("New Article")
+                    Text(NSLocalizedString("New Article", comment: "ArticlesMac"))
                 }
                 NavigationLink(destination: showView) {
-                    Text("Show all Articles")
+                    Text(NSLocalizedString("Show Articles", comment: "ArticlesMac"))
                 }
             }
             .padding()
@@ -27,16 +27,18 @@ struct ArticlesMac: View {
     
     var newView: some View {
         VStack (alignment: .leading, spacing: 5) {
-            Text("New Articles")
+            Text(NSLocalizedString("View to Make a New Article", comment: "ArticlesMac"))
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .navigationTitle(NSLocalizedString("New Article", comment: "ArticlesMac"))
     }
     
     var showView: some View {
         VStack (alignment: .leading, spacing: 5) {
-            Text("Show Articles")
+            Text(NSLocalizedString("View to Show all Articles", comment: "ArticlesMac"))
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .navigationTitle(NSLocalizedString("Show all Articles", comment: "ArticlesMac"))
     }
     
 }
